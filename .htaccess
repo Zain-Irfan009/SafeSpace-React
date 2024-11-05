@@ -1,0 +1,5 @@
+DirectoryIndex disabled
+# Redirect traffic to your port 45703
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)?$ http://167.172.224.197:45703/$1 [P,L]
